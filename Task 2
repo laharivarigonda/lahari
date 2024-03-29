@@ -1,0 +1,139 @@
+1.Write an algorithm for driving from your place to your favourite destination.
+         start at your current location
+         check traffic and road conditions
+         plan the route
+         Get directions
+         obey traffic rules
+         stay alert and focused
+         Use navigation assistance
+         handle intersections and Turns
+         Arrive at your Destination
+
+2.Write an algorithm for Registering & logging into your website.
+        User access login page
+        User Enters Login Credentials
+        Validate Login Credentials
+        Authenticate User
+        Redirect to Dashboard or User Profile
+        Handle Invalid Credentials
+
+3.Write an algorithm to check if a number is negative number or positive number.
+        Input: Accept the number to be checked as input.
+        Check if the number is zero
+        Check if the number is less than zero
+        Check if the number is greater than zero
+        Algorithm in pseuocode:
+        Algorithm CheckNumberSign(number)
+        Input: number (integer or float)
+    
+        if number is equal to 0 then
+           return "The number is zero"
+        else if number < 0 then
+             return "The number is negative"
+        else
+             return "The number is positive"
+        end if
+        End Algorithm
+
+4.Write an algorithm to check if a number is prime.
+        Input: Accept the number to be checked as input.
+        Check for Special Cases:
+        If the number is less than 2, it is not a prime number. End the algorithm and return a message indicating that the number is not prime.
+        If the number is exactly 2, it is a prime number. End the algorithm and return a message indicating that the number is prime.
+        Loop to Check Prime Status:
+        Initialize a variable 'is_prime' to true.
+        Iterate from 2 to the square root of the number (inclusive), checking if the number is divisible evenly by any of these values.
+        If the number is divisible evenly by any value in this range, set 'is_prime' to false and break out of the loop.
+        Check Prime Status Result:
+        If 'is_prime' is true after the loop, the number is prime. End the algorithm and return a message indicating that the number is prime.
+        If 'is_prime' is false after the loop, the number is not prime. End the algorithm and return a message indicating that the number is not prime.
+
+5.Write an algorithm to check if a number is amstrong.
+        Input: Accept the number to be checked as input.
+        Count the Digits:
+        Count the number of digits in the input number. Let's denote this count as 'num_digits'.
+        Compute Armstrong Sum:
+        Initialize a variable 'sum' to 0.
+        Iterate through each digit of the input number using a loop.
+        For each digit, raise it to the power of 'num_digits' and add the result to 'sum'.
+        Check Armstrong Condition:
+        If the computed 'sum' is equal to the input number, then the number is an Armstrong number.
+        Otherwise, the number is not an Armstrong number.
+
+6.Write an algorithm to check if a year is leap year or not.
+        Input: Accept the year to be checked as input.
+        Check Leap Year Conditions:
+        If the year is evenly divisible by 4, go to the next step.
+        If the year is evenly divisible by 100, go to step 3; otherwise, go to step 4.
+        If the year is evenly divisible by 400, go to step 5; otherwise, go to step 4.
+        If none of the above conditions are met, the year is not a leap year.
+        Check Non-Leap Year:
+        If the year is divisible by 100 but not divisible by 400, it is not a leap year.
+        Check Leap Year:
+        If the year is divisible by 4 but not divisible by 100, it is a leap year.
+        Check Leap Year (Exception):
+        If the year is divisible by 400, it is a leap year.
+
+7.Write an algorithm to find n factorial of a number.
+        Input: Accept the number n for which the factorial will be calculated.
+        Initialize Result: Initialize a variable result to 1. This will store the factorial value.
+        Loop to Calculate Factorial:
+        Start a loop from 1 to n (inclusive).
+        In each iteration, multiply result by the current loop index.
+        Return Factorial Result: After the loop completes, result will hold the factorial value of n. Return result as the factorial of n.
+
+8.Write an algorithm to find fibbonacci of a given number.
+        Input: Accept the number n for which the Fibonacci number will be calculated.
+        Initialize Variables: Initialize two variables, fib1 and fib2, to store the first two Fibonacci numbers:
+        fib1 = 0
+        fib2 = 1
+        Loop to Calculate Fibonacci:
+        Start a loop from 2 to n (inclusive).
+        In each iteration, calculate the next Fibonacci number by adding fib1 and fib2, and store it in a variable \text{next_fib}.
+        Update fib1 to the current fib2 value, and fib2 to the \text{next_fib} value.
+        Return Fibonacci Result: After the loop completes, fib2 will hold the Fibonacci number of n. Return fib2 as the Fibonacci result.
+
+9.Write an algorithm to find even numbers existing in a an array between the starting and ending position you give.
+        Input: Accept the array of numbers and the starting and ending positions as input.
+        Initialize an Empty List for Even Numbers: Create an empty list to store even numbers found within the specified range.
+        Loop through the Array Elements:
+        Start a loop from the starting position index to the ending position index (inclusive).
+        For each element in the specified range:
+            Check if the element is even (i.e., divisible by 2 with remainder 0).
+            If the element is even, add it to the list of even numbers.
+        Return the List of Even Numbers: After the loop completes, return the list containing even numbers found within the specified range.
+Algorithm in pseudocode:
+Algorithm FindEvenNumbersInRange(array, start_index, end_index)
+    Input: 
+        array (list of integers)
+        start_index (integer)
+        end_index (integer)
+    
+    even_numbers_list = []
+
+    for i from start_index to end_index do
+        if array[i] % 2 == 0 then
+            add array[i] to even_numbers_list
+        end if
+    end for
+
+    return even_numbers_list
+End Algorithm
+
+10.Write an algorithm to find the sum of sub-array you pick dynamically should be greater than 10 and copy those values (not the sum) into another array.
+         Input: Accept the array of numbers as input.
+         Initialize an Empty List for Sub-Arrays: Create an empty list to store sub-arrays with a sum greater than 10.
+         Initialize an Empty List for Copied Values: Create an empty list to store the values (not the sum) of the selected sub-array.
+         Loop through Array to Find Sub-Arrays:
+         Start a loop from the first element index to the last element index.
+         For each starting index 'i' in the array:
+             Initialize a variable 'current_sum' to 0.
+             Start a nested loop from 'i' to the last element index.
+             For each ending index 'j' in the nested loop:
+                  Add the value of 'array[j]' to 'current_sum'.
+                  Check if 'current_sum' is greater than 10:
+                        If yes, add the sub-array from index i to index j to the list of sub-arrays.
+                        Also, copy the values of this sub-array to the list of copied values.
+                  Otherwise, continue the nested loop.
+          End the nested loop.
+         Return Copied Values List: After the loop completes, return the list containing the values of sub-arrays with a sum greater than 10.
