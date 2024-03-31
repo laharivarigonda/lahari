@@ -1,0 +1,20 @@
+class Employee{
+	//save this class name as file name also
+	public static void main(String args[]){		//args -variable name-is it mandate??
+		// to give clarity on the flow of program		
+		System.out.println("hello world"); //print and got to next line
+		System.out.print("hello1");
+		System.out.print("hello2");	
+			}
+}
+
+// psvm(args)......we can use any variable name instead of args
+// 1. write without arg...
+// 2. spvm(args)...if the main() method is written without String args[]..The program will compile, but not run, because JVM will not recognize the main() method.
+//JVM always looks for the main() method with a string type array as a parameter. 
+
+// 3. psm(args).....If main method is not void, we will get an error
+
+
+
+
