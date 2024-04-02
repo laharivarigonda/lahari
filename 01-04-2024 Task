@@ -1,0 +1,109 @@
+**TASK 1
+
+//float r=2.5f % 2; //0.5 --commented ----> how is this 0.5 comes as result?
+  float r=2.5f / 2; //1.25
+	System.out.println(r);
+
+	float r=2.5f / 2; //1.25(takes quotient as result)
+	System.out.println(r);
+	float s=2.5f % 2; //0.5(takes remainder as result) 
+   System.out.println(s);
+Explanation : When you divide 2.5 by 2, you get 1 with a remainder of 0.5. In Java, the modulus operator(%) gives you the remainder of this division operation. 
+	            So, when you do 2.5f % 2, it calculates the remainder, which is 0.5. Therefore, the result of 2.5f % 2 is 0.5.
+
+
+
+**TASK 2
+	
+Write a program for sum of digits
+  23 ==> 2+3=5
+  54 ==> 5+4=9
+  33 ==> 3+3=9
+  19 ==> 1+9=10=1+0 // no need for this
+  //55,65 - no need
+ int r=14; //use only literals  (hardcoded values)
+
+
+package operators;
+
+public class sumofDigit {
+
+	public static void main(String[] args) {
+		int n=19;
+		int sum=0;
+		int sum1=0;
+		while(n>0)
+		{
+			int rem=n%10;
+			sum=sum+rem;
+			n=n/10;
+		}
+		if(sum>9)
+		{
+			while(sum>0)
+			{
+				int rem=sum%10;
+				sum1=sum1+rem;
+				sum=sum/10;
+			}
+			System.out.println(sum1);
+		}
+		else
+		{
+			System.out.println(sum);
+		}
+	}
+
+}
+
+
+output:
+0
+
+
+**TASK3
+c/=2, e%=2
+
+
+package operators;
+
+public class modulo {
+
+	public static void main(String[] args) {
+		int c=5;
+		int e=10;
+		c/=2;
+		e%=2;
+		System.out.println(c);
+		System.out.println(e);
+	}
+}
+
+output:
+1
+5
+
+
+Task4
+decrement optr - demo
+
+
+package operators;
+
+public class Decrement {
+
+	public static void main(String[] args) {
+		int n=5;
+		System.out.println(n--);
+		System.out.println(n);
+		System.out.println(--n);
+	}
+}
+
+
+output:
+5
+4
+3
+
+
