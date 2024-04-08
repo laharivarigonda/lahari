@@ -1,0 +1,36 @@
+->> Task 1:-
+purpose of making constr as private: 
+Making a constructor private is a technique used in object-oriented programming to control how instances of a class are created.
+
+->> Task 2:-
+can i make constr as final - impact:
+Constructors cannot be declared as `final` in Java; however, making the entire class `final` prevents subclassing, indirectly securing constructors from being modified.
+
+->> Task 3:-
+if a keep int nearby constr - what happens:
+The 'int' variable can be used within the constructor or the class for various purposes, such as calculations or storing values.
+So, keeping 'int' nearby constructor it doesn't impact.
+
+->> Task 4:-
+class emp, in main meth - if a craete 5 obj - it should print 5 as o/p
+if u creat 3 obj - it  should print 3 obj.
+
+public class Emp {
+    private static int objectCount = 0;
+
+    public Emp() {
+        objectCount++;
+    }
+
+    public static void main(String[] args) {
+     
+        for (int i = 0; i < 5; i++) {
+            new Emp();
+        }
+
+        System.out.println(objectCount);
+    }
+}
+
+output:- 
+no of Emp object created: 5
